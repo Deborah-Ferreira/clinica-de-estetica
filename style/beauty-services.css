@@ -1,0 +1,13 @@
+& .beauty-services {  
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.75rem;   
+  margin: 1.56rem;
+}
+@media(min-width:48rem) {
+  & .beauty-services {   
+    display: flex;
+    flex-direction: column;  
+    padding-top: 5rem; 
+  }
+}
