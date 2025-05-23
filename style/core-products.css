@@ -1,0 +1,14 @@
+& .core-products { 
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;  
+  margin: 1.56rem;
+}
+
+@media(min-width:48rem) {
+  & .core-products { 
+    padding-top: 3.75rem;  
+    display: flex;
+    flex-direction: column;  
+  }
+}
