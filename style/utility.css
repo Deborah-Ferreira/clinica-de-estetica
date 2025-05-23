@@ -3,11 +3,17 @@
   transform: translateY(1.25rem);
   transition: all 1s ease-in-out;
 }
+
 & .animation.visivel {
   opacity: 1;
-  transform: translateY(1.25rem);       
-}
+  transform: translateY(1.25rem);     
+} 
 
+& .animation.visivel.ativo {
+  opacity: 0;
+  animation: slideDown 2s ease-out forwards; 
+}
+ 
 & h2 {
   font: var(--f-lg);
   font-size: 1.25rem;

@@ -18,10 +18,9 @@
     text-align: center;  
     align-items: center; 
     justify-content: center;
-    position: absolute;
-    bottom: 0; /* Começa acima da tela*/
-    opacity: 0; /* Começa invisível*/
-    animation: slideDown 2s ease-out forwards; /* Animação suave*/
+    margin: 250px;
+    position: absolute; 
+    
     & h2 {  
       color: var(--bg-color-primary); 
       font-size: 1.75rem;
@@ -36,6 +35,17 @@
       line-height: 150%; 
     }
   } 
+  
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @media(min-width:48rem) {
   & .clinic-intro { 

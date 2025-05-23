@@ -14,8 +14,9 @@
     margin: auto;
     position: relative;
     top: 0; /* Começa acima da tela*/
-    opacity: 0; /* Começa invisível*/
-    animation: slideDown 2s ease-out forwards; /* Animação suave*/  
+    /* opacity: 0; 
+    animation: slideDown 2s ease-out forwards;  */
+    /* Começa invisível*//* Animação suave*/  
   }
   & .contact { 
     margin: auto;
