@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+:root {
+  --text-color-primary: #e4c77774;
+  --text-color-secondary: #f8f4ed89;
+  --text-color-tertiary: #a24e4e;
+  --bg-color-primary: #fbecec;
+  --bg-color-secondary: #fff7f7;
+  --fs-lg: 5rem;
+  --fs-md: 2rem; 
+  --ff-md: "Quicksand", sans-serif;
+  --ff-lg: "Elsie Swash Caps", serif;
+  --f-md: 2rem var(--ff-md);
+  --f-lg: 5rem var(--ff-lg);
+}
+html {
+  font-size: 1rem;
+}

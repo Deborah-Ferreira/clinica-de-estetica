@@ -1,0 +1,96 @@
+& .hero {   
+  height: 28.12rem; 
+  background: url(../assets/images/skincare.jpg) no-repeat center/cover; 
+  text-align: center;   
+  padding-inline: 2.5rem;  
+  & header { 
+    background: url(../assets/Logo.svg) no-repeat  center/5.31rem; 
+    padding: 2rem;    
+  }  
+}
+& .hero-content {  
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  margin-block: auto;
+  position: relative;
+  top: 0px; /* Começa acima da tela*/
+  opacity: 0; /* Começa invisível*/
+  animation: slideDown 2s ease-out forwards; /* Animação suave*/
+  & h1 {
+    color: var(--text-color-primary); 
+    font: var(--f-lg);
+    font-size: var(--fs-md); 
+    max-width: 11.25rem; 
+  }
+  & p { 
+    color: var(--text-color-secondary); 
+    margin-block: .93rem 1.25rem;
+    font: var(--f-md); 
+    font-size: 1.12rem;
+    animation: slideDown 3s ease-out forwards; /* Animação suave*/  
+    max-width: 80%;   
+  }
+  & .btn {
+    color: var(--text-color-secondary);   
+    text-decoration: none;    
+    width: 25rem; 
+    max-width: 8.75rem;  
+    padding-block: .31rem;
+    text-transform: uppercase;
+    font: var(--f-md); 
+    font-size: .62rem;
+    border: 1px solid rgba(249, 242, 230, 0.5); 
+    animation: slideDown 4s ease-out forwards; /* Animação suave*/
+    &:hover {
+      background-color: rgba(249, 242, 230, 0.036);
+      border: 1px solid rgba(249, 242, 230, 0.212);
+    } 
+    &:focus {
+      background-color: rgba(249, 242, 230, 0);
+      border: none;
+    } 
+    & .seta {  
+      height: .5rem;
+    }
+  }   
+} 
+/* definindo a animação */
+@keyframes slideDown {
+  0% {
+    top: -50px; /* Inicia mais acima*/  
+    opacity: 0; /* Começa invisível*/
+  }
+  100% {
+    top: 0; /* Vai para a posição normal*/
+    opacity: 100%; /* Fica visível*/
+  }
+}
+@media(min-width:768px) {
+  & .hero-content { 
+    & h1 {  
+      max-width: 100%; 
+      font-size: var(--fs-lg);
+    }
+    & p {    
+      font-size: var(--fs-md);  
+      max-width: 50%; 
+      margin-block: 2.81rem 5rem;
+    }
+    & .btn {   
+      font-size: var(--fs-md);    
+      max-width: 25rem;
+      & .seta {  
+        height: 1.25rem; 
+        width: 2.5rem;
+      }
+    }
+  }
+  & .hero {  
+    height: 46.87rem;
+    & header { 
+      padding: 3.12rem;    
+      background-size: 7.5rem; 
+    } 
+  } 
+}
