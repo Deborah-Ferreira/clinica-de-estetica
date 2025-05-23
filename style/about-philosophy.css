@@ -1,0 +1,45 @@
+& .about-philosophy {
+  height: 28.12rem; 
+  background-color: #fbecec;
+  color: var(--text-color-tertiary);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding-inline: 2.18rem;
+  margin: auto;  
+
+  & h1 {
+    font: var(--f-lg); 
+    font-size: 1.87rem;
+    
+  } 
+
+  & p {
+    font: var(--f-md);
+    font-size: .62rem;
+  }
+}
+ 
+@media(min-width:48rem) {
+  & .about-philosophy {
+    height: 46.87rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    padding-inline: 7.5rem;
+
+    & h1 {
+      font: var(--f-lg);
+      font-size: 2.5rem;
+    }
+
+    & p {
+      font: var(--f-md);
+      font-size: 1.25rem;
+      max-width: 37.5rem;
+    }
+  }
+}
